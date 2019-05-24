@@ -1,0 +1,394 @@
+/* bora fechar, Finch? */
+/* Ok, eu poderia ter colocado scss aqui mas im running against the time :p */
+.pull-right {
+  float: right;
+}
+.noPadd {
+  padding:0!important;
+}
+body {
+  background: #ffff;
+}
+ul {
+  list-style: none;
+}
+#app {
+  margin-top:-40px;
+  font-family: 'Open Sans', sans-serif;
+}
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin:0;
+  padding:0;
+}
+.header-banner {
+  background: rgba(66,89,170,1);
+  background: -moz-linear-gradient(45deg, rgba(66,89,170,1) 0%, rgba(60,33,86,1) 100%);
+  background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(66,89,170,1)), color-stop(100%, rgba(60,33,86,1)));
+  background: -webkit-linear-gradient(45deg, rgba(66,89,170,1) 0%, rgba(60,33,86,1) 100%);
+  background: -o-linear-gradient(45deg, rgba(66,89,170,1) 0%, rgba(60,33,86,1) 100%);
+  background: -ms-linear-gradient(45deg, rgba(66,89,170,1) 0%, rgba(60,33,86,1) 100%);
+  background: linear-gradient(45deg, rgba(66,89,170,1) 0%, rgba(60,33,86,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4259aa', endColorstr='#3c2156', GradientType=1 );
+  padding:15em 0;
+  margin-bottom:20px;
+}
+.header-banner .left-headers h1 {
+  font-size: 9.4em;
+  line-height: 74px;
+  color:#fff;
+  font-weight: 700;
+}
+.header-banner .left-headers h2 {
+  font-size:4.2em;
+  color:#fff;
+  font-weight: 400;
+  margin-bottom:15px;
+}
+.header-banner .left-headers a {
+  font-size: 1.8em;
+  border-top:1px solid #fff;
+  font-style: italic;
+  color:#fff;
+  padding-top:10px;
+}
+
+.header-banner .right-content {
+  position: relative;
+  background: #311f4b;
+  display: inline-block;
+  color: white;
+  padding: 2em 6em 1em 0em;
+  float: right;
+  z-index: 1;
+  width: 20em;
+}
+.header-banner .right-content::before {
+		z-index: -1;
+		content: "";
+		position: absolute;
+		left: -10%;
+		top: 0;
+		height: 100%;
+		width: 100%;
+		background-color: inherit;
+		-webkit-transform: skewX(-10deg);
+		-moz-transform: skewX(-10deg);
+		-ms-transform: skewX(-10deg);
+		transform: skewX(-10deg);
+}
+
+.navmae {
+  float: left;
+  width: 100%;
+  padding-bottom:10px;
+  border-bottom:1px solid #dfdfdf;
+}
+.menu {
+  display: flex;
+  width: 100%;
+}
+.menu li a {
+  color:#a4a4a4;
+  font-size: 1.4em;
+  padding:1em 2em;
+}
+.menu li a.active {
+  color:#000;
+}
+
+.social-media {
+  float:right;
+  display: flex;
+}
+.social-media li {
+  float:left;
+}
+.social-media a {
+  float:left;
+  padding:0 1em !important;
+}
+
+
+.about-content {
+  margin-top:10em;
+  width: 100%;
+  float: left;
+}
+
+.about-content img {
+  display:block;
+  margin:0 auto;
+}
+
+.about-content h2 {
+  margin-top:15px;
+  color:#979797;
+  text-align: center;
+  font-size: 3em;
+  position: relative;
+  padding-bottom:0.4em;
+  margin-bottom:0.7em;
+}
+
+.about-content h3 {
+  font-size: 1.3em;
+  color:#979797;
+  text-align: center;
+  margin-bottom:3em;
+}
+
+.about-content h2::after {
+  content:'';
+    position:absolute;
+    width:2.3em;
+    height:1px;
+    background:#979797;
+    bottom:0;
+    left:0;
+    right:0;
+    margin:auto;
+}
+
+.about-content h4 {
+  margin-top:10px;
+  text-align: center;
+  font-size: 1.8em;
+  color:#303030;
+}
+.about-content h4 em {
+  font-style: normal;
+  color:#e61757;
+}
+.about-content p {
+  text-align: center;
+  font-size: 1.3em;
+  color:#707070;
+}
+
+.random-counters {
+  margin-top:2em;
+  background: #dadada;
+  float: left;
+  width: 100%;
+  padding:3em 0;
+}
+.random-counters span em {
+  font-size: 5em;
+  font-weight: 700;
+  color:#e61757;
+  float: left;
+  font-style: normal;
+  width: 100%;
+  line-height: 35px;
+}
+.random-counters span {
+  float: left;
+}
+.random-counters img {
+  float: left;
+  margin-right: 10px;
+}
+
+.random-counters span p {
+  font-size: 1.6em;
+  color:#7a7a7a;
+  float: left;
+}
+
+.services {
+  padding:5em 0;
+  float: left;
+  width: 100%;
+}
+
+.services h2 {
+  margin-top:15px;
+  color:#303030;
+  text-align: center;
+  font-size: 2.7em;
+  position: relative;
+  margin-bottom:0.2em;
+  font-weight: 700;
+}
+
+.services h3 {
+  font-size: 2.1em;
+  color:#979797;
+  text-align: center;
+  margin-bottom:3em;
+}
+
+.services h4 {
+  font-size: 1.8em;
+  color:#303030;
+  position: relative;
+  padding-bottom:5px;
+  margin-bottom:15px;
+}
+
+.services h4::after {
+  content:'';
+    position:absolute;
+    width:2.3em;
+    height:1px;
+    background:#979797;
+    bottom:0;
+    left:0;
+    margin:auto;
+}
+
+.services h4 em {
+  color:#e61757;
+  font-style: normal;
+}
+
+.services img {
+  float: left;
+  margin-right: 10px;
+}
+
+.services span {
+  float: left;
+  width: 84%;
+  margin-bottom:30px;
+}
+
+.services p {
+  font-size: 1.3em;
+  color:#707070;
+}
+
+.contact {
+  padding:5em 0;
+  float: left;
+  width: 100%;
+  background: rgba(153,29,72,1);
+background: -moz-linear-gradient(top, rgba(153,29,72,1) 0%, rgba(72,59,125,1) 46%, rgba(218,218,218,1) 47%, rgba(218,218,218,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(153,29,72,1)), color-stop(46%, rgba(72,59,125,1)), color-stop(47%, rgba(218,218,218,1)), color-stop(100%, rgba(218,218,218,1)));
+background: -webkit-linear-gradient(top, rgba(153,29,72,1) 0%, rgba(72,59,125,1) 46%, rgba(218,218,218,1) 47%, rgba(218,218,218,1) 100%);
+background: -o-linear-gradient(top, rgba(153,29,72,1) 0%, rgba(72,59,125,1) 46%, rgba(218,218,218,1) 47%, rgba(218,218,218,1) 100%);
+background: -ms-linear-gradient(top, rgba(153,29,72,1) 0%, rgba(72,59,125,1) 46%, rgba(218,218,218,1) 47%, rgba(218,218,218,1) 100%);
+background: linear-gradient(to bottom, rgba(153,29,72,1) 0%, rgba(72,59,125,1) 46%, rgba(218,218,218,1) 47%, rgba(218,218,218,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#991d48', endColorstr='#dadada', GradientType=0 );
+}
+
+.form-content {
+  background: #fff;
+  float: left;
+  width: 100%;
+  padding:2em;
+}
+
+.contact-info h3 {
+  font-size: 2.3em;
+  font-weight: 700;
+  color:#303030;
+  margin-bottom:15px;
+}
+
+.contact-info p {
+  font-size: 1.3em;
+  color:#898989;
+}
+
+.contact-items  {
+  padding:0;
+  margin:0;
+}
+
+.contact-items img {
+  float: left;
+}
+
+.contact-items li {
+  float: left;
+  width: 100%;
+  margin-bottom:15px;
+}
+
+.contact-items h4 {
+  float: left;
+  font-size: 1.8em;
+  color:#303030;
+  margin-left:20px;
+}
+
+.contact-items h4 a {
+  color:#303030;
+}
+
+.contact h3.session-title {
+  font-weight: 700;
+  color:#fff;
+  font-size: 2.7em;
+  text-align: center;
+}
+
+.contact h4.session-subtitle {
+  color:#fff;
+  font-size: 2.1em;
+  text-align: center;
+  position: relative;
+  padding-bottom:1em;
+  margin-bottom:2em;
+}
+
+.contact h4.session-subtitle::after {
+  content:'';
+    position:absolute;
+    width:4em;
+    height:1px;
+    background:#fff;
+    bottom:0;
+    left:0;
+    right: 0;
+    margin:auto;
+}
+#contact-form label {
+  font-size: 1.4em;
+  color:#303030;
+  margin-left:10px;
+  font-weight: 300;
+}
+
+#contact-form input, #contact-form textarea {
+  border-radius: 0;
+  border-color: #e2e2e2;
+  padding:2em;
+  margin-bottom:10px;
+}
+
+#contact-form button {
+  background: #e61757;
+  padding:1em 1.5em;
+}
+
+.footer {
+  margin-top:30px;
+  background: #fff;
+  width: 100%;
+  float: left;
+  padding:0.1em;
+  text-align: center;
+}
+
+.footer p {
+  text-align: center;
+  font-size: 1.5em;
+  color:#737373;
+}
+
+
+form {
+  width: 100%;
+}
+header {
+  padding:5px 10px 25px 10px!important;
+  height: 100px;
+  background: #fff!important;
+}
